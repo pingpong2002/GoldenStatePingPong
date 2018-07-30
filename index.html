@@ -6,17 +6,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
-  .mySlides {display:none; width: 100vw;}
-  .w3-left, .w3-right, .w3-badge {cursor:pointer}
-  .w3-badge {
-    height:13px;
-    width:13px;
-    padding:0;
-  }
-  .w3-content {
-    max-width: 1500px !important;
-    max-height: 100vh !important;
-  }
   #nav-container {
         position: fixed;
         left: 30vw;
@@ -115,6 +104,93 @@
     position: fixed;
     left: 8vw;
   }
+  #blue {
+    background-color: rgba(30,30,30, 0.6);
+    width: 100%;
+  }
+  #header {
+			  display: -webkit-box;
+			  display: -webkit-flex;
+			  display: -ms-flexbox;
+			  display: flex;
+			  -webkit-box-pack: center;
+			  -webkit-justify-content: center;
+			  -ms-flex-pack: center;
+			  justify-content: center;
+			 `width: 100vw;
+			  height: 100vh;
+				background-color: #6766FF;
+        background-image: url('http://i65.tinypic.com/9vd11u.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment:fixed;
+			 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0B00', endColorstr='#77c9d4', GradientType=1 );
+			}
+      #title_heading h1 {
+    			  font-size: 80px;
+    			  font-weight: 300;
+    			  text-transform: uppercase;
+    			  line-height: 0.85;
+    			  margin-bottom: 28px;
+    			  margin: 0;
+    			  padding: 0;
+    			  color: #FFFFFF;
+    			}
+    			#title_heading h2 {
+    			  color: #FFFFFF;
+    			  font-size: 16px;
+    			  font-weight: 400;
+    			  text-transform: uppercase;
+    			  letter-spacing: 5px;
+    			  margin-top: 50px;
+    			}
+          #description {
+                    text-align: center;
+                    color: red;
+
+                 }
+                 #title_heading {
+                 				display: inline-block;
+                 				margin-left: 0px;
+                 				margin-top: 250px;
+                 			}
+                      #about {
+			  padding: 50px 0 50px 0;
+        height: 100vh;
+			}
+      .container:after, .row:after, .u-cf {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+      .container {
+
+			  position: relative;
+			  width: 100%;
+			  max-width: 960px;
+			  margin: 0 auto;
+			  padding: 0 20px;
+			  box-sizing: border-box;
+
+			}
+      @media (min-width: 400px) {
+			.container {
+			  width: 85%;
+			  padding: 0;
+			}
+			}
+
+			/* For devices larger than 550px */
+			@media (min-width: 550px) {
+			.container {
+			  width: 80%;
+			}}
+      .block {
+			  width: 70px;
+			  height: 2px;
+			  background-color: #6766FF; /* Old browsers */
+			  margin-bottom: 50px;
+			}
 </style>
 <body>
 
@@ -136,17 +212,14 @@
               </nav>
           </div>
       </div>
-      <div class="w3-content w3-display-container">
-      <img class="mySlides" src="http://i65.tinypic.com/2mc7z4h.jpg" style="width:100%; height: 100vh;">
-      <img class="mySlides" src="http://i65.tinypic.com/9vd11u.jpg" style="width:100%; height: 100vh;">
-      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <div id="blue">
+  			<center>
+          <div id="title_heading">
+            <img style="width: 50px; height: 50px; position: relative; bottom: 5vh;" src="http://i64.tinypic.com/23mto4l.png">
+  	        <h1 class="heading" id = "description" style="color: red; font-weight: bold;">Developing <br><br>Table Tennis Champions</h1><br><br><br><br><br><br>
+            <button style = "width: 15vw; height: 4em; border: 5px solid red; background-color: transparent;"><a style="color: red; font-size: 20px; text-decoration: none; text-transform: uppercase; font-weight: bold;" href="/newuser">Join Now</a></button>
+  				</div></center>
       </div>
-    </div>
   </header>
   <section id="about">
     <div class="container">
