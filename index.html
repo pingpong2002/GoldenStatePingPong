@@ -6,9 +6,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
+
   #nav-container {
         position: fixed;
-        left: 30vw;
+        left: 25vw;
         bottom: 86vh;
       }
   .main_nav {
@@ -25,6 +26,7 @@
     		opacity: 1 !important;
     		/*top: -100px !important;*/
     		padding-bottom: 6px !important;
+        border-bottom: 2px solid red;
     	}
 
   @media only screen and (max-width: 766px) {
@@ -81,7 +83,7 @@
 			  text-decoration: none;
 			}
 	nav > ul a:hover {
-			  color: #CFCFCF;
+			  color: red;
 			}
   #logo {
     display: inline-block;
@@ -105,7 +107,7 @@
     left: 8vw;
   }
   #blue {
-    background-color: rgba(30,30,30, 0.6);
+    background-color: rgba(10,10,10, 0.8);
     width: 100%;
   }
   #header {
@@ -124,6 +126,7 @@
         background-repeat: no-repeat;
         background-size: 100%;
         background-attachment:fixed;
+        border-bottom: 2px solid red;
 			 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0B00', endColorstr='#77c9d4', GradientType=1 );
 			}
       #title_heading h1 {
@@ -158,6 +161,16 @@
 			  padding: 50px 0 50px 0;
         height: 100vh;
 			}
+      #about h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        color: red;
+      }
+      #about p {
+        position: absolute;
+        top: 13vh;
+      }
       .container:after, .row:after, .u-cf {
 			  content: "";
 			  display: table;
@@ -167,7 +180,7 @@
 
 			  position: relative;
 			  width: 100%;
-			  max-width: 960px;
+			  max-width: 1200px;
 			  margin: 0 auto;
 			  padding: 0 20px;
 			  box-sizing: border-box;
@@ -188,9 +201,20 @@
       .block {
 			  width: 70px;
 			  height: 2px;
-			  background-color: #6766FF; /* Old browsers */
+			  background-color: red; /* Old browsers */
 			  margin-bottom: 50px;
+        position: absolute;
+        left: 38vw;
 			}
+
+      #title_heading a:hover {
+        color: white !important;
+      }
+      #title_heading button:hover {
+        background-color: red !important;
+        color: white !important;
+      }
+
 </style>
 <body>
 
@@ -216,67 +240,20 @@
   			<center>
           <div id="title_heading">
             <img style="width: 50px; height: 50px; position: relative; bottom: 5vh;" src="http://i64.tinypic.com/23mto4l.png">
-  	        <h1 class="heading" id = "description" style="color: red; font-weight: bold;">Developing <br><br>Table Tennis Champions</h1><br><br><br><br><br><br>
-            <button style = "width: 15vw; height: 4em; border: 5px solid red; background-color: transparent;"><a style="color: red; font-size: 20px; text-decoration: none; text-transform: uppercase; font-weight: bold;" href="/newuser">Join Now</a></button>
+  	        <h1 class="heading" id = "description" style="color: red; font-weight: bold; font-size: 100px;">Developing <br><br>Table Tennis Champions</h1><br><br><br><br><br><br>
+            <button style = "width: 15vw; height: 4em; border: 3px solid red; background-color: transparent;"><a style="color: red; font-size: 25px; text-decoration: none; text-transform: uppercase; font-weight: 200;" href="/newuser">Join Now</a></button>
   				</div></center>
       </div>
   </header>
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <h1><a name="linktoabout">About</a></h1>
-        <div class="block"></div>
-        <p style="font-size: 20px;">Matchmeds connects low income patients who can’t afford their prescriptions at retail prices to clinics that can help.</p>
-      </div>
-      <div class="row">
-        <div class="four columns">
-          <h3 style="color: #6766FF;">Affordable Prices</h3>
-            <p>
-              You pay based on your ability to pay, which is determined by annual income and family size.
-            </p>
-        </div>
-        <div class="four columns">
-          <h3 style="color: #6766FF;">Convenience</h3>
-            <p>
-              We deliver medication straight to your house. That’s one less errand on your to-do list.
-            </p>
-        </div>
-        <div class="four columns">
-          <h3 style="color: #6766FF;">Quality</h3>
-            <p>
-              Medications are ensured to be safe and legitimate as they are handled and received by certified safety-net clinics and charitable pharmacies.
-            </p>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <h1><a name="linktoabout">About</a></h1>
+          <div class="block"></div>
+          <p style="font-size: 20px;">Golden State Table Tennis is a full time table tennis club located in Milpitas, CA. Blah blah blah blah blah blah blah blah blah.</p>
         </div>
       </div>
     </div>
   </section>
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " w3-white";
-    }
-  </script>
 </body>
 </html>
