@@ -213,6 +213,105 @@
       #title_heading button:hover {
         background-color: red !important;
         color: white !important;
+
+      }
+      #programs {
+        display: inline-block;
+      }
+      #column1 {
+        width: 27vw;
+        position: absolute;
+        left: 0vw;
+        right: 63vw;
+        display: inline-block;
+        height: 100vh;
+      }
+      #column2 {
+        width: 27vw;
+        position: absolute;
+        left: 32vw;
+        right: 36vw;
+        display: inline-block;
+        height: 100vh;
+      }
+      #column3 {
+        width: 27vw;
+        position: absolute;
+        left: 66vw;
+        right: 5vw;
+        display: inline-block;
+        height: 100vh;
+      }
+      #column1Description, #column2Description {
+        width: 27vw;
+        height: 80vh;
+        position: relative;
+        right: 5vw;
+        bottom: 10vh;
+        overflow: hidden;
+      }
+      #column3Description {
+        position: relative;
+        width: 27vw;
+        right: 8vw;
+        bottom: 10vh;
+
+      }
+      #separator1, #separator2 {
+
+        border-left: 1px solid red;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 50px;
+      -webkit-border-image:
+      -webkit-gradient(linear, 0 50%, 0 0, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
+    border-image:
+      linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+      -webkit-border-image:
+      -webkit-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image:
+      -o-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+
+      }
+      #separator1 {
+        position: absolute;
+        left: 24vw;
+      }
+      #separator2 {
+        position: absolute;
+        left: 55vw;
+      }
+      #separator1bottom,  #separator2bottom {
+        border-left: 1px solid red;
+    height: 230px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 50px;
+        -webkit-border-image:
+      -webkit-gradient(linear, 0 0, 0 100%, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image:
+      -webkit-linear-gradient(red, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(red, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image:
+      -o-linear-gradient(red, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+      }
+      #separator1bottom {
+        position: absolute;
+        left: 24vw;
+        top: 24vh;
+      }
+      #separator2bottom {
+        position: absolute;
+        left: 55vw;
+        top: 24vh;
       }
 
 </style>
@@ -248,9 +347,28 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <h1><a name="linktoabout">About</a></h1>
-          <div class="block"></div>
-          <p style="font-size: 20px;">Golden State Table Tennis is a full time table tennis club located in Milpitas, CA. Blah blah blah blah blah blah blah blah blah.</p>
+          <div id="column1">
+            <h2 style="color: red;" id="programs"><a name="linktoabout">Group Training</a></h2>
+            <div id="column1Description">
+              <p style="font-size: 20px; line-height: 250%;">We offer all-day camps for children during holidays. Blah blah blah blah blah blah blah blah blah blah blahdfdfdkfjdjfdjfjdfjdjfdjfjdfjdjfdjfdjfdj<br> fjdlfjdlifjdljfldjfd. </p>
+            </div>
+          </div>
+          <div id="separator1"></div>
+          <div id="separator1bottom"></div>
+          <div id="column2">
+            <h2 style="color: red;" id="programs"><a name="linktoabout">Private Lessons</a></h2>
+            <div id="column2Description">
+              <p style="font-size: 20px; line-height: 250%;">We offer all-day camps for children<br> during holidays. Blah blah blah blah<br>  blah blah blah blah blah blah blahdfdfdkfjdjfdjfjdfjdjfdjfjdfjdjfdjfdjfdj<br> fjdlfjdlifjdljfldjfd. </p>
+            </div>
+          </div>
+          <div id="separator2"></div>
+          <div id="separator2bottom"></div>
+          <div id="column3">
+            <h2 style="color: red;" id="programs"><a name="linktoabout">Open Play</a></h2>
+            <div id="column3Description">
+              <p style="font-size: 20px; line-height: 250%;">We offer all-day camps for children during holidays. Blah blah blah blah  blah blah blah blah blah blah blahdfdfdkfjdjfdjfjdfjdjfdjfjdfjdjfdjfdjfdj<br> fjdlfjdlifjdljfldjfd.dfdfdfdfdfdfdfdfj k kk k k k k k k k  k k k k k k k  </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
