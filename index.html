@@ -4,7 +4,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
 
   #nav-container {
@@ -83,7 +83,7 @@
 			  text-decoration: none;
 			}
 	nav > ul a:hover {
-			  color: red;
+			  color: red !important;
 			}
   #logo {
     display: inline-block;
@@ -159,7 +159,7 @@
                  			}
                       #about {
 			  padding: 50px 0 50px 0;
-        height: 57vh;
+        height: 65vh;
         border-bottom: 2px solid red;
 			}
       #about h1 {
@@ -314,100 +314,129 @@
         left: 55vw;
         top: 24vh;
       }
-      * {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.carousel-showmanymoveone .carousel-control {
+ width: 4%;
+ background-image: none;
 }
 
-/* Hide the images by default */
-.mySlides {
+.carousel-showmanymoveone .carousel-control.left {
+ margin-left: 0;
+}
+
+.carousel-showmanymoveone .carousel-control.right {
+ margin-right: 0;
+}
+
+.carousel-showmanymoveone .cloneditem-1,
+.carousel-showmanymoveone .cloneditem-2,
+.carousel-showmanymoveone .cloneditem-3 {
+ display: none;
+}
+
+.carousel .item .col-xs-12 {
+ padding: 0;
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+ .carousel .item .col-xs-12:nth-last-child(-n+2) {
     display: none;
+ }
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+@media all and (min-width: 768px) {
+ .carousel-showmanymoveone .carousel-inner > .active.left,
+ .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -50%;
+ }
+ .carousel-showmanymoveone .carousel-inner > .active.right,
+ .carousel-showmanymoveone .carousel-inner > .next {
+    left: 50%;
+ }
+ .carousel-showmanymoveone .carousel-inner > .left,
+ .carousel-showmanymoveone .carousel-inner > .prev.right,
+ .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+ }
+ .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+    display: block;
+ }
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+@media all and (min-width: 768px) and (transform-3d),
+all and (min-width: 768px) and (-webkit-transform-3d) {
+ .carousel-showmanymoveone .carousel-inner > .item.active.right,
+ .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    left: 0;
+ }
+ .carousel-showmanymoveone .carousel-inner > .item.active.left,
+ .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    left: 0;
+ }
+ .carousel-showmanymoveone .carousel-inner > .item.left,
+ .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+ .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+ }
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+@media all and (min-width: 992px) {
+ .carousel-showmanymoveone .carousel-inner > .active.left,
+ .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -16.6%;
+ }
+ .carousel-showmanymoveone .carousel-inner > .active.right,
+ .carousel-showmanymoveone .carousel-inner > .next {
+    left: 16.6%;
+ }
+ .carousel-showmanymoveone .carousel-inner > .left,
+ .carousel-showmanymoveone .carousel-inner > .prev.right,
+ .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+ }
+ .carousel-showmanymoveone .carousel-inner .cloneditem-2,
+ .carousel-showmanymoveone .carousel-inner .cloneditem-3 {
+    display: block;
+ }
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+@media all and (min-width: 992px) and (transform-3d),
+all and (min-width: 992px) and (-webkit-transform-3d) {
+ .carousel-showmanymoveone .carousel-inner > .item.active.right,
+ .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(16.6%, 0, 0);
+    transform: translate3d(16.6%, 0, 0);
+    left: 0;
+ }
+ .carousel-showmanymoveone .carousel-inner > .item.active.left,
+ .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-16.6%, 0, 0);
+    transform: translate3d(-16.6%, 0, 0);
+    left: 0;
+ }
+ .carousel-showmanymoveone .carousel-inner > .item.left,
+ .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+ .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+ }
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+#footer {
+  height: 10vh;
+  background-color: red;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#gallery {
+  height: 40vh;
 }
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 </style>
 <body>
 
@@ -468,70 +497,85 @@
     </div>
   </section>
   <section id="gallery">
-    <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+    <div class="container">
+    <!--  <a href="https://github.com/rtpHarry/Bootstrap3-ShowManySlideOneCarousel">this code sample</a>   -->
+    <div class="row">
+       <div class="col-md-12">
+          <div class="carousel carousel-showmanymoveone slide" id="carousel-tilenav" data-interval="false">
+             <div class="carousel-inner">
+                <div class="item active">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i65.tinypic.com/spy7sz.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i65.tinypic.com/2agktbk.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i63.tinypic.com/o5upfl.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i66.tinypic.com/3a4cz.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i63.tinypic.com/2cifmmd.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i66.tinypic.com/2aeotar.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i64.tinypic.com/2hfm2it.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="col-xs-12 col-sm-6 col-md-2">
+                      <a href="#"><img src="http://i64.tinypic.com/211o1va.jpg" style="height: 40vh !important;" class="img-responsive"></a>
+                   </div>
+                </div>
+             </div>
+             <a class="left carousel-control" href="#carousel-tilenav" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+             <a class="right carousel-control" href="#carousel-tilenav" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
+       </div>
+    </div>
+    </div>
   </section>
+  <section id="footer">
+    <p>Footer</p>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
-  var slideIndex = 1;
-showSlides(slideIndex);
+  (function(){
+    $('.carousel-showmanymoveone .item').each(function(){
+      var itemToClone = $(this);
 
-// Next/previous controls
-function plusSlides(n) {
-showSlides(slideIndex += n);
-}
+      for (var i=1;i<6;i++) {
+        itemToClone = itemToClone.next();
 
-// Thumbnail image controls
-function currentSlide(n) {
-showSlides(slideIndex = n);
-}
+        // wrap around if at end of item collection
+        if (!itemToClone.length) {
+          itemToClone = $(this).siblings(':first');
+        }
 
-function showSlides(n) {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-}
+        // grab item, clone, add marker class, add to collection
+        itemToClone.children(':first-child').clone()
+          .addClass("cloneditem-"+(i))
+          .appendTo($(this));
+      }
+    });
+  }());
   </script>
 </body>
 </html>
